@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html {
+    background-color: rgb(224, 224, 224);
+    height: 100%;
+    z-index: -1;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    color: rgb(235, 235, 235);
+       align-items: center;
+}
+h1{
+	font-family: "Montserrat";
+}
+
+#taskbar {
+    position:absolute;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(72, 80, 86);
+}
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid rgb(19, 19, 19);
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: rgb(224, 224, 224);
+}
+
+.searchTerm:focus{
+  color: rgb(19, 19, 19);
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(19, 19, 19);
+  background: rgb(19, 19, 19);
+  text-align: center;
+  color: rgb(224, 224, 224);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#logout {
+    margin: 10px 30Px;
+    position: absolute;
+    right: 0px;
+    height: 35px;
+    width: 90px;
+    background-color: rgb(38, 38, 38);
+    border: 2px solid rgb(19, 19, 19);
+    border-radius: 40px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+}
+#sidebar {
+    position:absolute;
+    height: 890px;
+    width: 25%;
+    min-width: 200px;
+    left: 0px;
+    z-index: 0;
+    background-color: rgb(42, 47, 51);
+}
+#sidebar_user {
+    position:absolute;
+    height: 185px;
+    width: 25%;
+    min-width: 200px;
+    left: 0px;
+    z-index: 0;
+    background-color: rgb(52, 58, 63);
+}
+#sidebar_h{
+    margin-top: 200px;
+    margin-bottom: 10px;
+    z-index: 0;
+}
+.user_name{
+    position: relative;
+    display:inline;
+    font-size: 13px;
+    margin-top: 65px;
+    margin-left: 5px;
+    z-index: 2;
+}
+#user_info{
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 50px;
+}
+.title{
+    margin:auto;
+    float: top;
+    padding: 5px 5px 5px
+    
+}
+.image{
+    margin:auto;
+    padding: 5px 15px 5px;
+    float:right;
+    z-index: 2;
+	  border-radius: 10px;
+}
+.desc{
+    margin:auto;
+    float:left;
+    padding: 5px 15px 5px;
+    width:300px;
+    height: 130px;
+    font-size: 13px;
+    z-index: 2;
+}
+.tags{
+    margin:auto;
+    float:center;
+    padding: 5px 15px 5px;
+    width:300px;
+    height: 130px;
+    font-size: 13px;
+    z-index: 2;
+}
+#post1{
+	/*
+	special case because margin for spacing
+	*/
+    position:absolute;
+    height: 200px;
+    width: 55%;
+    right: 120px;
+    margin-top: 120px; 
+    z-index: 0;
+        border: 2px solid rgb(19, 19, 19);
+     border-radius: 10px;
+	 font-family: "Montserrat";
+    background-color: rgb(0, 163, 10);
+}
+#post2{
+	/*
+	will be the same as post1 but different margin
+	*/
+    position:absolute;
+    height: 200px;
+    width: 55%;
+    right: 120px;
+    margin-top: 350px; 
+    z-index: 0;
+        border: 2px solid rgb(19, 19, 19);
+     border-radius: 10px;
+	 font-family: "Montserrat";
+    background-color: rgb(0, 163, 10);
+}
+#post3{
+	/*
+	rgb value is going to be different and is going to have a different margin than post2
+	*/
+    position:absolute;
+    height: 200px;
+    width: 55%;
+    right: 120px;
+    margin-top: 580px; 
+    z-index: 0;
+        border: 2px solid rgb(19, 19, 19);
+     border-radius: 10px;
+	 font-family: "Montserrat";
+    background-color: rgb(17, 63, 137);
+}
+#borderimg2 { 
+    border: 0px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
